@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center><h1 class="sub-title">Foodie Hunter services</h1></center><br><br>
+    <div class="services" id="services">
+        <div class="container">
+            <div class="services-list">
+                <div class="scontainer">                   
+                    <h3>24/7 Services</h3>
+                    <img src="./images/service.jpeg" id="star">
+                    <p>We proud to offer our 24/7 services, ensuring you 
+                       can satisfy your hunger whenever it strikes.
+                       With our 24/7 services, you'll never have to wait to explore
+                       the world of culinary delights.
+                    </p>
+                    
+                </div>
+                <div class="scontainer">                    
+                    <h3>Catering Availability</h3>
+                    <img src="./images/cater.jpeg" id="star">
+                    <p> We offer comprehensive catering services
+                         for events of all sizes. Our diverse menu options,
+                          customizable packages, and professional staff
+                           ensure a memorable experience. Contact us to 
+                           discuss your catering needs today!
+                    </p>
+                </div>
+                <div class="scontainer">
+                    <h3>Hygenic Food & Staff</h3>
+                    <img src="./images/hygenic.jpeg" id="star">
+                    <p> Hygiene through regular cleaning,
+                         handwashing, and proper food storage.
+                          Train staff on sanitation protocols. 
+                          Use fresh ingredients, sanitize surfaces,
+                           and follow strict food safety guidelines
+                            to ensure hygienic food preparation.</p>
+                </div>
+    <style>
+        #star{
+            text-align:justify;
+            border-radius: 50%;
+            width: 50%;
+            height: 40%;
+            
+            color: rgb(42, 34, 49);
+        }
+        h3{
+            color: rgb(79, 34, 116);
+            font-family: 'Open Sans', sans-serif;
+        }
+        body{
+          background-image: url('images/about.jpeg');
+          background-size: cover; 
+          background-position: center; 
+          background-repeat: no-repeat;
+          margin: 10%;
+          padding: 0;
+        }
+    #services{
+       color: rgb(92, 45, 119);
+       font-size: 20px;
+       line-height: 1.6;
+       margin-bottom: 4rem;
+       text-align: center;
+}
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+    /* background-color: #f9f4f4; */
+    width: 1000px;
+    margin: 0 10%;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.service-list div{
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 13px;
+    border-right: 10px;
+    border-radius: 20px;
+    transition: background0.5s,transform 0.5s;
+    box-shadow: 1px 1px 20px #012290f7,
+             1px 1px 40px #0053b8f7
+}
+.services.list div i{
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+.service-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+} 
+.service-list div a{
+    text-decoration: none;
+    color: #a91818;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.service-list div:hover{
+    transform: translateY(-10px);
+}
+.container{
+    display: grid;
+    grid-template-columns: 250px 1fr 300px;
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+    overflow: hidden;
+}
+.scontainer{
+    border: 2px solid aqua;
+    box-shadow: 0px 0px 20px 5px rgb(93, 159, 168);
+    
+}
+.sub-title{
+    color:#a91818
+}
+
+    </style>            
+
+<script>
+    document.body.style.overflow = 'hidden';
+</script>
+</body>
+</html>
